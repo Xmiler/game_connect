@@ -17,7 +17,7 @@ class Board:
         self._players_count = players_count
         self._rows = rows
         self._columns = columns
-        self._state = -1 * np.ones((rows, columns), dtype=np.int)
+        self._state = -1 * np.ones((rows, columns), dtype=int)
         self._player_names = AVAILABLE_PLAYER_NAMES[:players_count]
 
     def draw(self, player_id, mode):
